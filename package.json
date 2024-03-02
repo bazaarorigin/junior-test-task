@@ -28,6 +28,7 @@
     "react-toastify": "^10.0.4",
     "reflect-metadata": "^0.1.13",
     "rxjs": "^7.8.0",
+    "toast": "^0.5.4",
     "tslib": "^2.3.0"
   },
   "devDependencies": {
