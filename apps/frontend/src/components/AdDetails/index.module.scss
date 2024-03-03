@@ -1,0 +1,15 @@
+.carousel {
+  display: flex;
+  gap: 20px;
+  list-style-type: none;
+  padding: 0 0 10px 0;
+  overflow-x: scroll;
+}
+
+.adsItem {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 20px;
+  height: 100%;
+}

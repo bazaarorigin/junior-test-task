@@ -10,7 +10,7 @@ module.exports = {
     '../../.eslintrc.json'
   ],
   'parserOptions': {
-    project: path.resolve(__dirname, '../../apps/frontend/tsconfig.json'),
+    project: path.resolve(__dirname, '../../apps/frontend/tsconfig.json')
   },
   'ignorePatterns': ['!**/*', '.next/**/*', 'jest.config.ts', '.eslintrc.js', 'next-env.d.ts'],
   'overrides': [
@@ -22,8 +22,10 @@ module.exports = {
         'eslint-plugin-import/no-extraneous-dependencies': 'off',
         'import/no-extraneous-dependencies': 'off',
         'no-console': 'error',
+        "react/react-in-jsx-scope": "off",
+        "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx", ".tsx"] }],
         'react/prop-types': 'off',
-        "spaced-comment": ["error", "always", { "exceptions": ["*", "@ts-check"] }]
+        'spaced-comment': ['error', 'always', { 'exceptions': ['*', '@ts-check'] }]
       }
     },
     {
@@ -41,4 +43,4 @@ module.exports = {
       }
     }
   ]
-}
+};

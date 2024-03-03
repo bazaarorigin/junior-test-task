@@ -1,5 +1,7 @@
 import React from 'react';
 import './global.css';
+import { Container } from '@mui/material';
+import Alert from '../components/Alert';
 
 export const metadata = {
   title: 'Welcome to frontend',
@@ -9,7 +11,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <Container maxWidth="lg" disableGutters>
+          {children}
+        </Container>
+        <Alert />
+      </body>
     </html>
   );
 }
