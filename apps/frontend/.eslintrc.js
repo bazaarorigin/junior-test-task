@@ -17,6 +17,7 @@ module.exports = {
     {
       'files': ['*.ts', '*.tsx', '*.js', '*.jsx'],
       'rules': {
+        'react/jsx-filename-extension': 'off',
         '@next/next/no-html-link-for-pages': ['error', 'apps/frontend/pages'],
         'react/function-component-definition': 'off',
         'eslint-plugin-import/no-extraneous-dependencies': 'off',
