@@ -15,7 +15,7 @@ const AdsItemLike: React.FC<AdsItemLikeProps> = ({ id }) => {
   const likeAdsItem = (
     e: React.MouseEvent<HTMLAnchorElement> | React.MouseEvent<HTMLButtonElement>
   ) => {
-    e.stopPropagation();
+    e.preventDefault();
 
     if (liked) {
       localStorage.removeItem(id);
