@@ -28,7 +28,12 @@ module.exports = {
     },
     {
       'files': ['*.ts', '*.tsx'],
-      'rules': {}
+      'rules': {
+        "react/jsx-filename-extension": 'off',
+        "react/require-default-props": "off",
+        "react-hooks/exhaustive-deps": "warn",
+        "@typescript-eslint/naming-convention": "off"
+      }
     },
     {
       'files': ['*.js', '*.jsx'],

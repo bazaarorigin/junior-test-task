@@ -1,0 +1,15 @@
+.loadingBlock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: 100%;
+}
+
+.hiddenBlock {
+  visibility: hidden;
+
+  width: 0;
+  height: 0;
+}

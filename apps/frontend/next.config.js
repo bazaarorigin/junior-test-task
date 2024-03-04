@@ -20,8 +20,23 @@ const nextConfig = {
         port: '',
         pathname: '/**',
       },
+      {
+        protocol: 'https',
+        hostname: 'learn.getgrav.org',
+        port: '',
+        pathname: '/**',
+      },
     ],
   },
+  async redirects() {
+    return [
+      {
+        source: "/",
+        destination: "/ads",
+        permanent: true
+      }
+    ]
+  }
 };
 
 const plugins = [
